@@ -14,7 +14,7 @@ useEffect(() => {
     loadTasks()
 }, [])
 
-  return <div>
+  return <div className="grid grid-cols-3 gap-3">
     {tasks.map(task => (
      <TaskCard key={task.id} task={task} />
     ))}
